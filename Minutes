@@ -1,0 +1,30 @@
+import java.util.*;
+class minutes
+{
+	public static void main(String[] args)
+	{
+		System.out.print("Enter minutes:");
+		Scanner sc=new Scanner(System.in);
+		minutes obj= new minutes(); 
+		long m=sc.nextLong();
+		long tm=m;
+		m=obj.years(m);
+		long d=obj.days(m);
+		System.out.print(" and "+d+" days in "+tm+" minutes.");
+	}
+
+	long years(long min)
+	{
+		long y=min/525600;
+		System.out.print("There are "+y+" years");
+		min=min%525600;
+		return min;
+	}
+
+	long days(long min)
+	{
+		long d=min/1400;
+		return d;
+	}
+
+}
