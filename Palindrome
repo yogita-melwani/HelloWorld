@@ -1,0 +1,49 @@
+import java.util.*;
+class palindrome
+{
+
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter a number: ");
+int num=sc.nextInt();
+int tnum=num;
+
+palindrome obj=new palindrome();
+int rev=obj.digit(num);
+if(tnum==rev)
+System.out.println("palindrome");
+else
+System.out.println("not palindrome");
+System.out.print("Enter a word: ");
+String str=sc.next();
+String tstr=str;
+String revs=obj.words(str);
+if(tstr.equalsIgnoreCase(revs))
+System.out.println("palindrome");
+else
+System.out.println("not palindrome");
+}
+public int digit(int n)
+{
+int r;
+int rev=0;
+while(n>0)
+{
+r=n%10;
+rev=rev*10 +r;
+n=n/10;
+}
+return rev;
+}
+public String words(String s)
+{
+String revs="";
+for(int i=s.length()-1;i>=0;i--)
+{
+revs=revs+s.charAt(i);
+}
+return revs;
+}
+
+}
