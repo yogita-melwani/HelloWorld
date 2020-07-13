@@ -1,0 +1,21 @@
+import java.util.*;
+class LetsSwitch
+{
+  public static void main(String[] args)
+  {
+    int choice;
+    System.out.println("pick one:\n 1)hi\n 2)hey\n 3)hello");
+    Scanner sc=new Scanner(System.in);
+    choice=sc.nextInt();
+    switch(choice)
+    {
+      case 1:System.out.println("You said hi");
+             break;
+      case 2:System.out.println("You said hey");
+             break;
+      case 3:System.out.println("You said hello");
+             break;
+      default:System.out.println("Invalid choice");
+    }
+  }
+}
