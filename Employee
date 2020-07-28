@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class Employee {
+
+	static Scanner sc= new Scanner(System.in);
+	static int y[]=new int[3],i;
+	static String n[]= new String[3];
+	static String a[]=new String[3];
+	static double sal[]=new double[3];
+	public static void main(String[] args) 
+	{
+		
+
+		for(i=0;i<=2;i++)
+		{
+			System.out.println("details of person "+i);
+			System.out.println("name:");
+			n[i]=sc.next();
+			System.out.println("year of joining:");
+			y[i]=sc.nextInt();
+			System.out.println("salary:");
+			sal[i]=sc.nextDouble();
+			System.out.println("address:");
+			a[i]=sc.nextLine();
+			sc.nextLine();	
+		}
+		System.out.println("Name \t Year of joining \t Salary \t Address");
+		for (i=0;i<=2;i++)
+		{
+			System.out.print(n[i]+" \t ");
+			System.out.print(y[i]+" \t ");
+			System.out.print(sal[i]);
+			System.out.println(" \t "+a[i]);
+		}
+
+	}
+
+}
+
+
