@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+	int ch;
+	printf("Welcome to the food corner!\n");
+	printf("Enter a number between 1-5, and get surprised for what you have at dinner today!");
+	scanf("%d",&ch);
+	switch(ch)
+	{
+		case 1: printf("Food Item: PAV BHAJI\nPrice: RS 150\n");
+				break;
+		case 2: printf("Food Item: DAL MAKHANI\nPrice: RS 230\n");
+				break;
+		case 3: printf("Food Item: BIRYANI\nPrice: RS 350\n");
+				break;
+		case 4: printf("Food Item: PURI BHAJI\nPrice: RS 170\n");
+				break;
+		case 5: printf("Food Item: MASALA DOSA\nPrice: RS 250\n");
+				break;
+		default:printf("We have only five items! Please try again later.");									
+	}
+	
+	return 0;
+}
